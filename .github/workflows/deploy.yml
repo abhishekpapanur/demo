@@ -1,7 +1,8 @@
-name: Deploy Project
-on: push
+name: Deploy
+on:
+  push
 jobs:
-  lint:
+  Deploy:
     runs-on:  ubuntu-latest
     steps:
       - name: Getting code
