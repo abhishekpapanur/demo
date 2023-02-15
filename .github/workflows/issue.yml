@@ -5,7 +5,8 @@ on:
       - opened
       - labeled
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Outputing event details
-      run: echo "${{ toJSON(github.event) }}"
+  Output:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Outputing event details
+        run: echo "${{ toJSON(github.event) }}"
