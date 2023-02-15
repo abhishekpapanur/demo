@@ -1,6 +1,9 @@
 name: Issue
 on:
-  issues
+  issues:
+    types:
+      - opened
+      - labeled
 jobs:
   runs-on: ubuntu-latest
   steps:
